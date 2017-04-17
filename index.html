@@ -9,6 +9,8 @@
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Montserrat:400,700' rel='stylesheet'
           type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/select2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
 
@@ -42,7 +44,7 @@
 <section id="speakers">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 row-item-col">
+            <div class="col-md-6 wow fadeInDown">
                 <h2>main goals of the event</h2>
                 <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis delectus
                     dignissimos explicabo fugit laudantium modi nesciunt perspiciatis sit tempore unde.</p>
@@ -50,7 +52,7 @@
                     eligendi et eveniet exercitationem fugiat impedit nihil quas quia quis repellat reprehenderit,
                     soluta voluptates voluptatibus voluptatum? Accusantium, cupiditate!</p>
             </div>
-            <div class="col-md-6 row-item-col">
+            <div class="col-md-6 row-item-col wow fadeInDown">
                 <div class="section-tabs">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -86,7 +88,7 @@
                 </div> <!-- /.section-tabs -->
             </div>
         </div>
-        <div class="row text-center speakers-head">
+        <div class="row text-center speakers-head wow zoomIn">
             <h2>EVENT SPEAKERS</h2>
             <p class="large">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sapiente?
@@ -96,7 +98,7 @@
         <div class="row speakers text-center">
             <div class="col-sm-3">
                 <div class="item row-item-col">
-                    <div>
+                    <div class="wow flipInX">
                         <img src="img/jobs.jpg" alt="Edward" class="img-circle front" data-toggle="modal"
                              data-target="#edward">
 							<span class="back">
@@ -133,7 +135,7 @@
             </div>
             <div class="col-sm-3">
                 <div class="item row-item-col">
-                    <div>
+                    <div class="wow flipInX" data-wow-delay=".5s">
                         <img src="img/lucy.jpg" alt="lucy" class="img-circle front" data-toggle="modal"
                              data-target="#lucy">
 							<span class="back">
@@ -170,7 +172,7 @@
             </div>
             <div class="col-sm-3">
                 <div class="item row-item-col">
-                    <div>
+                    <div class="wow flipInX" data-wow-delay="1s">
                         <img src="img/jobs.jpg" alt="Nathan" class="img-circle front" data-toggle="modal"
                              data-target="#nathan">
 							<span class="back">
@@ -207,7 +209,7 @@
             </div>
             <div class="col-sm-3">
                 <div class="item row-item-col">
-                    <div>
+                    <div class="wow flipInX" data-wow-delay="1.5s">
                         <img src="img/lucy.jpg" alt="jacob" class="img-circle front" data-toggle="modal"
                              data-target="#jacob">
 							<span class="back">
@@ -255,7 +257,7 @@
 <section id="events">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 row-item-col">
                 <h2>event schedule</h2>
                 <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur ducimus
                     eum exercitationem explicabo id itaque libero nihil saepe similique.</p>
@@ -279,14 +281,44 @@
                     <!-- Tab panes -->
                     <div class="tab-content clearfix">
                         <div role="tabpanel" class="tab-pane active fade in" id="nva18">
-                            <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample"
-                               aria-expanded="false" aria-controls="collapseExample">
-                                Link with href
+                            <p class="tab-collapse clearfix">
+                            <span class="time">10:00 AM</span>
+                            <a role="button" data-toggle="collapse" href="#collapse1"
+                               aria-expanded="false" aria-controls="collapseExample" class="collapse-link">
+                                Nemo enim ipsam voluptatem
                             </a>
-                            <div class="collapse" id="collapseExample">
-                                <div class="well">
-                                    ...
-                                </div>
+                                <span class="pull-right collapse-state">
+                                    <i class="fa fa-plus-circle"></i>
+                                </span>
+                        </p>
+                            <div class="collapse" id="collapse1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam delectus eum iste molestias placeat porro provident, quae recusandae soluta voluptas.</p>
+                            </div>
+                            <p class="tab-collapse clearfix">
+                                <span class="time">02:00 PM</span>
+                                <a role="button" data-toggle="collapse" href="#collapse2"
+                                   aria-expanded="false" aria-controls="collapseExample" class="collapse-link">
+                                    Neque porro quiquam est
+                                </a>
+                                <span class="pull-right collapse-state">
+                                    <i class="fa fa-plus-circle"></i>
+                                </span>
+                            </p>
+                            <div class="collapse" id="collapse2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam delectus eum iste molestias placeat porro provident, quae recusandae soluta voluptas.</p>
+                            </div>
+                            <p class="tab-collapse clearfix">
+                                <span class="time">08:00 PM</span>
+                                <a role="button" data-toggle="collapse" href="#collapse3"
+                                   aria-expanded="false" aria-controls="collapseExample" class="collapse-link">
+                                    Quis autem vel eum iure reprehenderit
+                                </a>
+                                <span class="pull-right collapse-state">
+                                    <i class="fa fa-plus-circle"></i>
+                                </span>
+                            </p>
+                            <div class="collapse" id="collapse3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam delectus eum iste molestias placeat porro provident, quae recusandae soluta voluptas.</p>
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="nav19">
@@ -313,11 +345,167 @@
                 </div> <!-- /.section-tabs -->
             </div>
         </div>
+        <div class="row row-item">
+            <div class="col-md-6 row-item-col">
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Sh85jKmNhaE"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 row-item-col">
+                <h2>PROMOTIONAL VIDEO</h2>
+                <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt, dignissimos dolor
+                    dolore, eos in magnam, molestiae nam nemo nisi rerum sed sit voluptatem! Cum iusto magnam possimus
+                    quis sint?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi aspernatur autem cupiditate
+                    dicta distinctio doloribus eaque facilis inventore iure libero magni nisi odit, porro praesentium
+                    quaerat ratione suscipit totam vero voluptatem. Accusamus at autem, culpa, eius explicabo facere
+                    magnam, non perspiciatis quae quia quidem quod reiciendis saepe tempora veritatis.</p>
+                <a href="#" class="link">YOUTUBE CHANNEL <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="row row-item">
+            <div class="col-md-6 row-item-col wow zoomIn">
+                <h2>event gallery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti ex illo molestias natus
+                    obcaecati quidem sint. Aspernatur, assumenda, quidem?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium aliquam asperiores
+                    aut, corporis culpa deserunt dolore dolorem doloribus dolorum eaque est excepturi illum iusto labore
+                    laboriosam laborum maxime modi necessitatibus nesciunt nisi nobis obcaecati odit optio perferendis
+                    provident, quasi qui quia quibusdam quis quo repudiandae ullam unde velit.</p>
+                <a href="#" class="link">FLICKR STREAM <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+            <div class="col-md-6 wow zoomIn">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
+                        <li data-target="#carousel" data-slide-to="4"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/slider1.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/slider2.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/slider3.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/slider4.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/slider5.jpg" alt="">
+                        </div>
+                    </div> <!-- carousel-inner -->
+                </div><!-- #carousel -->
+            </div>
+        </div>
+    </div>
+</section>
+<section id="form">
+    <div class="container text-center">
+        <div class="row">
+            <h2>THE MOST SIMPLE WAY TO LAUNCH YOUR EVENT</h2>
+            <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, officiis?</p>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="section-form">
+                    <form action="#" id="myForm">
+                        <div class="row">
+                            <div class="form-group col-md-3">
+                                <input type="text" class="form-control" name="name" placeholder="Jane Doe" required>
+                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <select name="plan" id="plan" class="forml-control form-sel">
+                                    <option value="0" disabled selected class="hidden">Select Plan</option>
+                                    <option value="1" disabled >1 Day - $20</option>
+                                    <option value="2" disabled >2 Day - $30</option>
+                                    <option value="3" disabled >3 Day - $40</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <button type="submit" class="btn btn-primaty">register <i class="fa fa-chevroon-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <img src="img/sponsor_facebook.png" alt="">
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <img src="img/sponsor_jquery.png" alt="">
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <img src="img/sponsor_envato.png" alt="">
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <img src="img/sponsor_facebook.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="map">
+    <img src="img/map.jpg" alt="map" width="100%">
+</section>
+<section id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 row-item-col">
+                <h3><spna>253</spna>People Have Signed in Since Juli</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid, aperiam autem fugit
+                    impedit modi molestiae placeat quibusdam rerum vitae!</p>
+                <p class="social">
+                    <img src="img/fb_like.png" alt="">
+                    <img src="img/tw_follow.png" alt="">
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-6 row-item-col">
+                <h4>Nees Help?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing <a href="#">FAQ</a> elit. Deleniti, <a
+                        href="mailto:#">hit@mail.com</a>reiciendis.</p>
+            </div>
+            <div class="col-md-3 col-sm-6 row-item-col">
+                <h4>Get In Touch</h4>
+                <div class="contacts">
+                    <p><i class="fa fa-phone-square"></i> +62 853 539 2001</p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:hi@mail.com">hi@mail.com</a></p>
+                    <p><i class="fa fa-skype"></i> Eventidesupport</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="copy">
+    <div class="container">
+        <p>Copyright &copy;2017</p>
     </div>
 </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/validator.min.js"></script>
+<script src="js/select2.full.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
